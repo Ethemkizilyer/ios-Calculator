@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  background: rgba(0, 204, 255, 0.466);
+}
+
+.container {
+  width: 300px;
+  height: 90%;
+  position: relative;
+  background-color: black;
+  border-radius: 35px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 3fr;
+  gap: 10px;
+  padding: 10px;
+}
+.eklenti {
+  color: white;
+  position: absolute;
+  top: 5px;
+  font-size: 0.8rem;
+  right: 20px;
+}
+
+.ekran {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-between;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-top: 0.6rem;
+  background: black;
+}
+.alt{
+  width: 100%;
+  text-align: end;
+  font-size: 2rem;
+  color: aquamarine;
+  background: transparent;
+  border: none;
+
+}
+.üst{
+  width: 100%;
+  text-align: end;
+  font-size: 2rem;
+  background: transparent;
+  color:blanchedalmond ;
+ border: none;
+}
+.tuslar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.tus {
+  background-color: rgb(99, 99, 99);
+  border-radius: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.tus:hover {
+  transform: scale(0.9);
+}
+.fonk {
+  background-color: rgb(189, 182, 182);
+  color: black;
+}
+.tus:nth-child(17) {
+  grid-column: span 2;
+  border-radius: 35px;
+}
+
+.tus:nth-child(4n + 4) {
+  background-color: orange;
+}
+.tus:nth-child(19) {
+  background-color: orange;
+}
+
+@media (max-width: 864px) {
+  .container {
+    width: 250px;
+    height: 80%;
+  }
+   .tus{
+    font-size: 1.5rem;
+  }
+  .eklenti{
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 564px) {
+  .container {
+    width: 200px;
+    height: 70%;
+  }
+  .tus{
+    font-size: 1rem;
+  }
+}
+
