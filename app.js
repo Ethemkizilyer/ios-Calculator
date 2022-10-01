@@ -112,3 +112,78 @@ tuslar.addEventListener("click", (event) => {
     }
   }
 });
+
+// **************************************************
+// const tuslar = document.querySelector(".tuslar")
+// const alt = document.querySelector(".alt")
+// const üst = document.querySelector(".üst")
+// let sayiEkle = false;
+// let esitFlag = false;
+// let sayi1 = 0;
+// let sayi2 = 0;
+// let islem = "";
+// let sayi ="";
+
+// tuslar.addEventListener("click",(e) => {
+//   if (e.target.classList.contains("sayı")){
+//     if(alt.value == "0" || sayiEkle == true || esitFlag == true){
+//       alt.value = e.target.innerText;
+//     } else{
+//       alt.value += e.target.innerText;
+//     }
+//     sayiEkle = false;
+//     esitFlag = false;
+//     sayi += e.target.innerText
+//   } else if (e.target.classList.contains("islem")){
+//     console.log(sayi1,sayi2,islem);
+//     üst.value = e.target.innerText;
+//     esitFlag && (sayi1 = alt.value);
+//     console.log("sayı1:",sayi1);
+//     sayi1 ? (sayi2 = sayi) : (sayi1= sayi);
+//     sayi = "";
+//     if(sayi1 && sayi2){
+//       console.log(sayi1,sayi2,islem);
+//       alt.valur = hesapla(sayi1,sayi2,islem);
+//       sayi1="";
+//       sayi2="";
+//       islem="";
+//     }
+//     islem = e.target.innerText;
+//     sayiEkle = true;
+//   } else if ( e.target.classList.contains("opposite")){
+//     üst.value = e.target.innerText;
+//     sayi2= sayi;
+//     if( sayi1 && sayi2){
+//       alt.value = hesapla(sayi1,sayi2,islem);
+//       sayi1="";
+//       sayi2="";
+//     islem="";
+//   console.log(sayi1,sayi2,islem);    
+// }
+// // sayi1="";
+// sayi= "";
+// esitFlag=true;
+//   } else if (e.target.classList.contains("btnAc")){
+//     sayi1="";
+//     sayi2="";
+//     islem="";
+//     alt.value="";
+//     üst.value="";
+//   }
+// })
+
+// function hesapla(sayi1,sayi2,islem){
+//   console.log(sayi1,sayi2,islem);
+//   switch (islem) {
+//     case "+":
+//       return Number(sayi1) + Number(sayi2);
+//     case "-":
+//       return Number(sayi1) - Number(sayi2);
+//     case "×":
+//       return Number(sayi1) * Number(sayi2);
+//     case "÷":
+//       return Number(sayi1) / Number(sayi2);
+//     case "%":
+//       return (Number(sayi1) * Number(sayi2)) / 100;
+//   }
+// }
